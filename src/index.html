@@ -7,65 +7,82 @@
         	<!--<svg width="124px" height="203px">-->
                	<!--<use xlink:href="#logo"></use>-->
             <!--</svg>-->
-            <div class="vertical-line"></div>
-            <div class="vertical-line"></div>
-            <div class="vertical-line"></div>
-            <div class="vertical-line"></div>
 
             <!-- .SECTION-1 -->
-            <div class="section-1">
-                <nav class="site-nav">
-                    <ul class="site-nav__box">
-                        <li class="site-nav__item"><a href="#">О &nbsp нас</a></li>
-                        <li class="site-nav__item"><a href="#">Каталог</a></li>
-                        <li class="site-nav__item"><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="logo">
-                    <span class="logo__text">Bocharova</span>
-                </div>
-                <form class="search-form" name="search-site" action="#">
-                    <input type="text" id="search_query-1" placeholder="Поиск по сайту">
-                    <input type="submit" id="search_go-1" value="">
-                </form>
-                <div class="section-1__wrap-animated-elem">
-                    <h1 class="section-1__head">Make<wbr> Your Life<wbr> Colorful</h1>
-                    <a class="button-contact-us" href="#">Contact us</a>
-                </div>
-                <div class="section-1__bottom-row">
-                    <div class="social-network">
-                        <a href="#"><img src="./images/bg-vk.svg" width="24" height="24"></a>
-                        <a href="#"><img src="./images/bg-facebook.svg" width="24" height="24"></a>
-                        <a href="#"><img src="./images/bg-vk.svg" width="24" height="24"></a>
+            <div class="wrap-section-1">
+                <div class="vertical-line"></div>
+                <div class="vertical-line"></div>
+                <div class="vertical-line"></div>
+                <div class="vertical-line"></div>
+                <div class="section-1">
+                    <div class="section-1__header">
+                        <div class="section-1__mobile">
+                            <div class="toggle">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="logo">
+                                <span class="logo__text">Bocharova</span>
+                            </div>
+                            <form class="search-form section-1__search" name="search-site" action="#">
+                                <input type="text" id="search_query-1" placeholder="Поиск по сайту">
+                                <input type="submit" id="search_go-1" value="">
+                            </form>
+                        </div>
+                        <nav class="site-nav show">
+                            <ul class="site-nav__box">
+                                <li class="site-nav__item"><a class="js-scroll-link" href="#about">О&nbspнас</a></li>
+                                <li class="site-nav__item"><a class="js-scroll-link" href="#catalog">Каталог</a></li>
+                                <li class="site-nav__item"><a class="js-scroll-link" href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div id="scroll">
-                        <!--<span class="arrow-bounce">&#8595;</span>-->
-                        <svg class="arrow-bounce" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="53px">
-                            <image  x="0px" y="0px" width="15px" height="53px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAA1CAQAAAA0PnkKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCgkOEjfso816AAAAeklEQVQ4y+3OywmAMBBF0YuKJaULV+5SSEgDQpY2Ylc2YRTGhYmJvwrMQCC882AG8tFs6DyoLqyoUd/8mMKFCxf+GTd0tEyv1rOAR7AhGBHG8LcIHgbkLCS2CMIA4M5C5ANd3BILB98wFebwbpi2SXbJR+EVAQwrJg92c3Q3pISZQa0AAAAASUVORK5CYII=" />
-                        </svg>
+
+                    <div class="section-1__circle"></div>
+
+                    <div class="section-1__wrap-animated-elem">
+                        <h1 class="section-1__head">Make<wbr> Your Life<wbr> Colorful</h1>
+                        <a class="button-contact-us" href="#">Contact us</a>
                     </div>
-                    <div class="lang">
-                        <span class="lang__ru">Рус</span>
-                        <span class="lang__en">Eng</span>
-                    </div>
-                </div>
-                <div class="main-slider">
-                    <div class="main-slider__box">
-                        <div class="main-slider__item">
-                            <img src="images/main-slide-1.png" alt="" width="1530" height="1000">
-                            <div class="main-slider__circle"></div>
+                    <div class="section-1__bottom-row">
+                        <div class="social-network">
+                            <a href="#"><svg width="24px" height="24px"><use xlink:href="#instagram"></use></svg></a>
+                            <a href="#"><svg width="24px" height="24px"><use xlink:href="#facebook"></use></svg></a>
+                            <a href="#"><svg width="24px" height="24px"><use xlink:href="#vk"></use></svg></a>
+                        </div>
+                        <div id="scroll">
+                            <!--<span class="arrow-bounce">&#8595;</span>-->
+                            <svg class="arrow-bounce" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="53px">
+                                <image  x="0px" y="0px" width="15px" height="53px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAA1CAQAAAA0PnkKAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfhCgkOEjfso816AAAAeklEQVQ4y+3OywmAMBBF0YuKJaULV+5SSEgDQpY2Ylc2YRTGhYmJvwrMQCC882AG8tFs6DyoLqyoUd/8mMKFCxf+GTd0tEyv1rOAR7AhGBHG8LcIHgbkLCS2CMIA4M5C5ANd3BILB98wFebwbpi2SXbJR+EVAQwrJg92c3Q3pISZQa0AAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                        <div class="lang">
+                            <span class="lang__ru active">Рус</span>
+                            <span class="lang__en">Eng</span>
                         </div>
                     </div>
-                    <div class="main-slider__box">
-                        <div class="main-slider__item">
-                            <img src="images/main-slide-2.png" alt="" width="1530" height="1000">
-                            <div class="main-slider__circle"></div>
+                    <div class="main-slider">
+                        <div class="main-slider__box">
+                            <div class="main-slider__item">
+                                <!--<img src="images/main-slide-1.png" alt="" width="1530" height="1000">-->
+                                <img src="images/main-girls-img-big-1.png" srcset="images/main-girls-img-big-1.png 2x" alt="" width="928" height="1551">
+                                <!--<div class="main-slider__circle"></div>-->
+                            </div>
                         </div>
-                    </div>
-                    <div class="main-slider__box">
-                        <div class="main-slider__item">
-                            <img src="images/main-slide-1.png" alt="" width="1530" height="1000">
-                            <div class="main-slider__circle"></div>
+                        <div class="main-slider__box">
+                            <div class="main-slider__item">
+                                <img src="images/main-girls-img-gig-2.png" srcset="images/main-girls-img-gig-2.png 2x" alt="" width="763" height="1646">
+                                <!--<img src="images/main-slide-2.png" alt="" width="1530" height="1000">-->
+                                <!--<div class="main-slider__circle"></div>-->
+                            </div>
+                        </div>
+                        <div class="main-slider__box">
+                            <div class="main-slider__item">
+                                <img src="images/main-girls-img-big-1.png" srcset="images/main-girls-img-big-1.png 2x" alt="" width="928" height="1551">
+                                <!--<img src="images/main-slide-1.png" alt="" width="1530" height="1000">-->
+                                <!--<div class="main-slider__circle"></div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,35 +91,54 @@
 
             <!-- HEADER -->
             <header class="site-header">
+                <div class="site-header__mobile">
+                    <div class="toggle-1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
                 <div class="site-header__logo">
                     <a href="#" class="site-header__text">Bocharova</a>
                 </div>
                 <ul class="site-header__box">
-                    <li class="site-header__item"><a href="#">О нас</a></li>
-                    <li class="site-header__item"><a href="#">Каталог</a></li>
-                    <li class="site-header__item"><a href="#">Контакты</a></li>
+                    <li class="site-header__item"><a class="js-scroll-link" href="#about">О нас</a></li>
+                    <li class="site-header__item"><a class="js-scroll-link" href="#catalog">Каталог</a></li>
+                    <li class="site-header__item"><a class="js-scroll-link" href="#contacts">Контакты</a></li>
                 </ul>
-                <form class="search-form" name="search-site" action="#">
+                <form class="search-form header__search" name="search-site" action="#">
                     <input type="text" id="search_query" placeholder="Поиск по сайту">
                     <input type="submit" id="search_go" value="">
                 </form>
             </header>
             <!-- /HEADER -->
 
+            <div class="vertical-line-1"></div>
+            <div class="vertical-line-1"></div>
+            <div class="vertical-line-1"></div>
+            <div class="vertical-line-1"></div>
+
             <!-- .SECTION-2 -->
-            <div class="section-2">
+            <div class="section-2" id="about">
                 <div class="about-us">
-                    <img src="images/about-us-img.jpg" alt="about us" width="771" height="700">
+                    <div class="about-us__img">
+                        <img src="images/about-us-img.jpg" alt="about us" width="771" height="700">
+                    </div>
+
                     <div class="about-us__desc">
                         <h2 class="head-level-2">О нас</h2>
-                        <div class="about-us__wrap">
+                        <div class="about-us__wrap section-animate">
                             <p class="about-us__info"><a class="tag" href="#">#MBocharova</a> - модный бренд одежды, органично объединивший в себе уникальный дизайн и высокое качество изделий.</p>
-                            <p class="about-us__fade-in_top about-us__info">Мы с искренней любовью занимаемся своим делом - производством джинсовых курток с уникальными принтами ручной работы.</p>
+                            <p class="about-us__info">Мы с искренней любовью занимаемся своим делом - производством джинсовых курток с уникальными принтами ручной работы.</p>
+                            <p class="about-us__info about-us__info_fade-box animate-it">
+                                Каждое изделие, созданное нашими <br>мастерами, неповторимо.
+                                <!--<div class="about-us__info_fade"></div>-->
+                            </p>
                             <p class="about-us__info">Каждый рисунок разрабатывается исключительно под пожелания клиента и переносится на изделие с максимальным соответствием оригиналу.</p>
                             <p class="about-us__info">Наша модель ONE SIZE уже успела покорить сердца знаменитых модников, став популярной.</p>
                         </div>
                     </div>
-                    <p class="about-us__fade-in">Каждое изделие, созданное нашими мастерами, неповторимо.</p>
+                    <!--<p class="about-us__fade-in">Каждое изделие, созданное нашими мастерами, неповторимо.</p>-->
                 </div>
             </div>
             <!-- /.SECTION-2 -->
@@ -111,19 +147,19 @@
             <div class="section-3">
                 <div class="advantages">
                     <h2 class="head-level-2">Наши Преимущества</h2>
-                    <div class="advantages__box">
-                        <div class="advantages__item">
-                            <p class="advantages__item_bg">01</p>
+                    <div class="advantages__box section-animate">
+                        <div class="advantages__item animate-it-1">
+                            <p class="advantages__item_bg animate-it">01</p>
                             <h3 class="advantages__item_title">Ручная работа</h3>
                             <p class="advantages__item_desc">Также, как и сами куртки, наши принты уникальны. Среди них нет ни одного повторяющегося рисунка - <b>мы высоко ценим индивидуальность.</b></p>
                         </div>
-                        <div class="advantages__item">
-                            <p class="advantages__item_bg">02</p>
+                        <div class="advantages__item animate-it-1">
+                            <p class="advantages__item_bg animate-it">02</p>
                             <h3 class="advantages__item_title">Собственное производство</h3>
                             <p class="advantages__item_desc">Мы занимаемся производством курток самостоятельно: <b>от подбора лучшего материала до разработки дизайна и пошива изделия.</b></p>
                         </div>
-                        <div class="advantages__item">
-                            <p class="advantages__item_bg">03</p>
+                        <div class="advantages__item animate-it-1">
+                            <p class="advantages__item_bg animate-it">03</p>
                             <h3 class="advantages__item_title">Доставка в любую точку мира</h3>
                             <p class="advantages__item_desc"><b>Наша цель</b> - предоставить возможность всем желающим носить стильные и качественные куртки <b>#MBocharova</b> Мы готовы доставить изделие в любую точку земного шара.</p>
                         </div>
@@ -136,68 +172,111 @@
             <!-- /.SECTION-3 -->
 
             <!-- .SECTION-4 -->
-            <div class="section-4">
+            <div class="section-4 section-animate" id="catalog">
                 <h2 class="head-level-2">Каталог</h2>
-                <div class="catalog">
-                    <div class="catalog__item">
-                        <img src="images/catalog-img-1.jpg" alt="" width="310" height="354">
-                        <div class="catalog__price">
-                            <span>$350</span>
-                            <span>+</span>
+                <div class="catalog  animate-it">
+                    <div class="catalog__box catalog__animate-1 ">
+                        <div class="catalog__item">
+                            <img src="images/catalog-img-1.jpg" alt="" width="310" height="354">
+                            <div class="catalog__price">
+                                <span>$350</span>
+                                <span>+</span>
+                            </div>
+                            <h3>Girlseries Jeans Jacket</h3>
+                            <p>Combining deconstructed jersey basics with handmade paintings</p>
+                            <div class="catalog__sources">
+                                <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
+                                <a class="tag" href="/search?t=girlseries">#girlseries</a>
+                                <a class="tag" href="/search?t=2017">#2017</a>
+                            </div>
+                            <a class="catalog__order" href="#">Order Now</a>
                         </div>
-                        <h3>Girlseries Jeans Jacket</h3>
-                        <p>Combining deconstructed jersey basics with handmade paintings</p>
-                        <div class="catalog__sources">
-                            <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
-                            <a class="tag" href="/search?t=girlseries">#girlseries</a>
-                            <a class="tag" href="/search?t=2017">#2017</a>
-                        </div>
-                        <a class="catalog__order" href="#">Order Now</a>
                     </div>
-                    <div class="catalog__item">
-                        <img src="images/catalog-img-2.jpg" alt="" width="310" height="354">
-                        <div class="catalog__price">
-                            <span>$350</span>
-                            <span>+</span>
+                    <div class="catalog__box catalog__animate-2 ">
+                        <div class="catalog__item">
+                            <img src="images/catalog-img-2.jpg" alt="" width="310" height="354">
+                            <div class="catalog__price">
+                                <span>$350</span>
+                                <span>+</span>
+                            </div>
+                            <h3>Girlseries Jeans Jacket</h3>
+                            <p>Combining deconstructed jersey basics with handmade paintings</p>
+                            <div class="catalog__sources">
+                                <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
+                                <a class="tag" href="/search?t=girlseries">#girlseries</a>
+                                <a class="tag" href="/search?t=2017">#2017</a>
+                            </div>
+                            <a class="catalog__order" href="#">Order Now</a>
                         </div>
-                        <h3>Girlseries Jeans Jacket</h3>
-                        <p>Combining deconstructed jersey basics with handmade paintings</p>
-                        <div class="catalog__sources">
-                            <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
-                            <a class="tag" href="/search?t=girlseries">#girlseries</a>
-                            <a class="tag" href="/search?t=2017">#2017</a>
-                        </div>
-                        <a class="catalog__order" href="#">Order Now</a>
                     </div>
-                    <div class="catalog__item">
-                        <img src="images/catalog-img-3.jpg" alt="" width="310" height="354">
-                        <div class="catalog__price">
-                            <span>$350</span>
-                            <span>+</span>
+                    <div class="catalog__box catalog__animate-3 ">
+                        <div class="catalog__item">
+                            <img src="images/catalog-img-3.jpg" alt="" width="310" height="354">
+                            <div class="catalog__price">
+                                <span>$350</span>
+                                <span>+</span>
+                            </div>
+                            <h3>Girlseries Jeans Jacket</h3>
+                            <p>Combining deconstructed jersey basics with handmade paintings</p>
+                            <div class="catalog__sources">
+                                <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
+                                <a class="tag" href="/search?t=girlseries">#girlseries</a>
+                                <a class="tag" href="/search?t=2017">#2017</a>
+                            </div>
+                            <a class="catalog__order" href="#">Order Now</a>
                         </div>
-                        <h3>Girlseries Jeans Jacket</h3>
-                        <p>Combining deconstructed jersey basics with handmade paintings</p>
-                        <div class="catalog__sources">
-                            <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
-                            <a class="tag" href="/search?t=girlseries">#girlseries</a>
-                            <a class="tag" href="/search?t=2017">#2017</a>
-                        </div>
-                        <a class="catalog__order" href="#">Order Now</a>
                     </div>
-                    <div class="catalog__item">
-                        <img src="images/catalog-img-4.jpg" alt="" width="310" height="354">
-                        <div class="catalog__price">
-                            <span>$350</span>
-                            <span>+</span>
+                    <div class="catalog__box catalog__animate-4 ">
+                        <div class="catalog__item">
+                            <img src="images/catalog-img-4.jpg" alt="" width="310" height="354">
+                            <div class="catalog__price">
+                                <span>$350</span>
+                                <span>+</span>
+                            </div>
+                            <h3>Girlseries Jeans Jacket</h3>
+                            <p>Combining deconstructed jersey basics with handmade paintings</p>
+                            <div class="catalog__sources">
+                                <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
+                                <a class="tag" href="/search?t=girlseries">#girlseries</a>
+                                <a class="tag" href="/search?t=2017">#2017</a>
+                            </div>
+                            <a class="catalog__order" href="#">Order Now</a>
                         </div>
-                        <h3>Girlseries Jeans Jacket</h3>
-                        <p>Combining deconstructed jersey basics with handmade paintings</p>
-                        <div class="catalog__sources">
-                            <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
-                            <a class="tag" href="/search?t=girlseries">#girlseries</a>
-                            <a class="tag" href="/search?t=2017">#2017</a>
+                    </div>
+
+                    <div class="catalog__box">
+                        <div class="catalog__item">
+                            <img src="images/catalog-img-3.jpg" alt="" width="310" height="354">
+                            <div class="catalog__price">
+                                <span>$350</span>
+                                <span>+</span>
+                            </div>
+                            <h3>Girlseries Jeans Jacket</h3>
+                            <p>Combining deconstructed jersey basics with handmade paintings</p>
+                            <div class="catalog__sources">
+                                <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
+                                <a class="tag" href="/search?t=girlseries">#girlseries</a>
+                                <a class="tag" href="/search?t=2017">#2017</a>
+                            </div>
+                            <a class="catalog__order" href="#">Order Now</a>
                         </div>
-                        <a class="catalog__order" href="#">Order Now</a>
+                    </div>
+                    <div class="catalog__box">
+                        <div class="catalog__item">
+                            <img src="images/catalog-img-2.jpg" alt="" width="310" height="354">
+                            <div class="catalog__price">
+                                <span>$350</span>
+                                <span>+</span>
+                            </div>
+                            <h3>Girlseries Jeans Jacket</h3>
+                            <p>Combining deconstructed jersey basics with handmade paintings</p>
+                            <div class="catalog__sources">
+                                <a class="tag" href="/search?t=MBocharova">#MBocharova</a>
+                                <a class="tag" href="/search?t=girlseries">#girlseries</a>
+                                <a class="tag" href="/search?t=2017">#2017</a>
+                            </div>
+                            <a class="catalog__order" href="#">Order Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,67 +317,79 @@
             <!-- .SECTION-6 -->
             <div class="section-6">
                 <div class="gallery">
-                    <a data-fancybox="gallery" href="images/about-us-img.jpg">
-                        <div class="gallery__hover_wrap">
-                            <div class="gallery__hover">
-                                <svg width="80" height="80">
-                                    <use xlink:href="#scale-fancy"></use>
-                                </svg>
+                    <div class="gallery__item-wrap">
+                        <a data-fancybox="gallery" href="images/about-us-img.jpg">
+                            <div class="gallery__hover_wrap">
+                                <div class="gallery__hover">
+                                    <svg width="80" height="80">
+                                        <use xlink:href="#scale-fancy"></use>
+                                    </svg>
+                                </div>
+                                <img src="images/gallery-img-1.jpg" alt="" width="300" height="301">
                             </div>
-                            <img src="images/gallery-img-1.jpg" alt="" width="300" height="301">
-                        </div>
-                    </a>
-                    <a data-fancybox="gallery" href="images/about-us-img.jpg">
-                        <div class="gallery__hover_wrap">
-                            <div class="gallery__hover">
-                                <svg width="80" height="80">
-                                    <use xlink:href="#scale-fancy"></use>
-                                </svg>
+                        </a>
+                    </div>
+                    <div class="gallery__item-wrap">
+                        <a data-fancybox="gallery" href="images/about-us-img.jpg">
+                            <div class="gallery__hover_wrap">
+                                <div class="gallery__hover">
+                                    <svg width="80" height="80">
+                                        <use xlink:href="#scale-fancy"></use>
+                                    </svg>
+                                </div>
+                                <img src="images/gallery-img-2.jpg" alt="" width="300" height="301">
                             </div>
-                            <img src="images/gallery-img-2.jpg" alt="" width="300" height="301">
-                        </div>
-                    </a>
-                    <a data-fancybox="gallery" href="images/about-us-img.jpg">
-                        <div class="gallery__hover_wrap">
-                            <div class="gallery__hover">
-                                <svg width="80" height="80">
-                                    <use xlink:href="#scale-fancy"></use>
-                                </svg>
+                        </a>
+                    </div>
+                    <div class="gallery__item-wrap">
+                        <a data-fancybox="gallery" href="images/about-us-img.jpg">
+                            <div class="gallery__hover_wrap">
+                                <div class="gallery__hover">
+                                    <svg width="80" height="80">
+                                        <use xlink:href="#scale-fancy"></use>
+                                    </svg>
+                                </div>
+                                <img src="images/gallery-img-3.jpg" alt="" width="300" height="301">
                             </div>
-                            <img src="images/gallery-img-3.jpg" alt="" width="300" height="301">
-                        </div>
-                    </a>
-                    <a data-fancybox="gallery" href="images/about-us-img.jpg">
-                        <div class="gallery__hover_wrap">
-                            <div class="gallery__hover">
-                                <svg width="80" height="80">
-                                    <use xlink:href="#scale-fancy"></use>
-                                </svg>
+                        </a>
+                    </div>
+                    <div class="gallery__item-wrap">
+                        <a data-fancybox="gallery" href="images/about-us-img.jpg">
+                            <div class="gallery__hover_wrap">
+                                <div class="gallery__hover">
+                                    <svg width="80" height="80">
+                                        <use xlink:href="#scale-fancy"></use>
+                                    </svg>
+                                </div>
+                                <img src="images/gallery-img-4.jpg" alt="" width="300" height="301">
                             </div>
-                            <img src="images/gallery-img-4.jpg" alt="" width="300" height="301">
-                        </div>
-                    </a>
-                    <a data-fancybox="gallery" href="images/about-us-img.jpg">
-                        <div class="gallery__hover_wrap">
-                            <div class="gallery__hover">
-                                <svg width="80" height="80">
-                                    <use xlink:href="#scale-fancy"></use>
-                                </svg>
+                        </a>
+                    </div>
+                    <div class="gallery__item-wrap">
+                        <a data-fancybox="gallery" href="images/about-us-img.jpg">
+                            <div class="gallery__hover_wrap">
+                                <div class="gallery__hover">
+                                    <svg width="80" height="80">
+                                        <use xlink:href="#scale-fancy"></use>
+                                    </svg>
+                                </div>
+                                <img src="images/gallery-img-5.jpg" alt="" width="300" height="301">
                             </div>
-                            <img src="images/gallery-img-5.jpg" alt="" width="300" height="301">
-                        </div>
-                    </a>
-                    <a data-fancybox="gallery" href="images/about-us-img.jpg">
-                        <div class="gallery__hover_wrap">
-                            <div class="gallery__hover">
-                                <svg width="80" height="80">
-                                    <use xlink:href="#scale-fancy"></use>
-                                </svg>
+                        </a>
+                    </div>
+                    <div class="gallery__item-wrap">
+                        <a data-fancybox="gallery" href="images/about-us-img.jpg">
+                            <div class="gallery__hover_wrap">
+                                <div class="gallery__hover">
+                                    <svg width="80" height="80">
+                                        <use xlink:href="#scale-fancy"></use>
+                                    </svg>
+                                </div>
+                                <img src="images/gallery-img-6.jpg" alt="" width="300" height="301">
                             </div>
-                            <img src="images/gallery-img-6.jpg" alt="" width="300" height="301">
-                        </div>
-                    </a>
-            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <!-- /.SECTION-6 -->
 
@@ -307,32 +398,54 @@
                 <h2 class="head-level-2">Условия заказа</h2>
                 <p class="section-7__desc">Доставка курток <a class="tag" href="/search?t=MBocharova">#MBocharova</a> осуществляется по всему миру! Будьте внимательны, ознакомьтесь с условиями до оформления заказа.</p>
                 <div class="order-conditions">
-                    <div class="order-conditions__item">
-                        <h3 class="order-conditions__item_title">Схема работы</h3>
-                        <p class="order-conditions__item_desc">Мы нацелены на сотрудничество и <b>создаем комфортные для всех условия.</b></p>
-                        <a class="order-conditions__item_button" href="#">Подробнее</a>
+                    <div class="order-conditions__box">
+                        <div class="order-conditions__item">
+                            <h3 class="order-conditions__item_title">Схема работы</h3>
+                            <p class="order-conditions__item_desc">Мы нацелены на сотрудничество и <b>создаем комфортные для всех условия.</b></p>
+                            <a class="order-conditions__item_button" href="#">Подробнее</a>
+                        </div>
                     </div>
-                    <div class="order-conditions__item">
-                        <h3 class="order-conditions__item_title">Оплата</h3>
-                        <p class="order-conditions__item_desc">Вы можете произвести оплату <b>любым удобным вам способом</b></p>
-                        <a class="order-conditions__item_button" href="#">Подробнее</a>
+                    <div class="order-conditions__box">
+                        <div class="order-conditions__item">
+                            <h3 class="order-conditions__item_title">Оплата</h3>
+                            <p class="order-conditions__item_desc">Вы можете произвести оплату <b>любым удобным вам способом</b></p>
+                            <a class="order-conditions__item_button" href="#">Подробнее</a>
+                        </div>
                     </div>
-                    <div class="order-conditions__item">
-                        <h3 class="order-conditions__item_title">Доставка</h3>
-                        <p class="order-conditions__item_desc">Мы отправляем наши изделия <b>в любою точку планеты</b></p>
-                        <a class="order-conditions__item_button" href="#">Подробнее</a>
+                    <div class="order-conditions__box">
+                        <div class="order-conditions__item">
+                            <h3 class="order-conditions__item_title">Доставка</h3>
+                            <p class="order-conditions__item_desc">Мы отправляем наши изделия <b>в любою точку планеты</b></p>
+                            <a class="order-conditions__item_button" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="order-conditions__box">
+                        <div class="order-conditions__item">
+                            <h3 class="order-conditions__item_title">Доставка</h3>
+                            <p class="order-conditions__item_desc">Мы отправляем наши изделия <b>в любою точку планеты</b></p>
+                            <a class="order-conditions__item_button" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="order-conditions__box">
+                        <div class="order-conditions__item">
+                            <h3 class="order-conditions__item_title">Оплата</h3>
+                            <p class="order-conditions__item_desc">Вы можете произвести оплату <b>любым удобным вам способом</b></p>
+                            <a class="order-conditions__item_button" href="#">Подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- /.SECTION-7 -->
 
             <!-- .SECTION-8 -->
-            <div class="section-8">
-                <img src="images/contacts-img.jpg" alt="" width="762" height="1000">
+            <div class="section-8" id="contacts">
+                <div class="section-8__img">
+                    <img src="images/contacts-img.jpg" alt="" width="762" height="1000">
+                </div>
                 <div class="contacts">
                     <h2 class="head-level-2">Контакты</h2>
                     <div class="contacts__box">
-                        <a href="#" class="contacts__country">Russia, <b>Moscow</b> Leninsky Prospekt, 29</a>
+                        <a href="#" class="contacts__country">Russia, <b>Moscow</b><br>Leninsky Prospekt, 29</a>
                         <a href="tel:+380970848097" class="contacts__tel">+38097<b>0848097</b></a>
                         <a href="http://mbocharova.com" class="contacts__www">mbocharova.com</a>
                         <a href="mailto:hello@mbocharova.com" class="contacts__mail">hello@mbocharova.com</a>
@@ -347,27 +460,48 @@
             <!-- .SECTION-9 -->
             <div class="section-9">
                 <div class="gallery-footer">
-                    <div class="gallery-footer__item">
+                    <div class="gallery-footer__item-wrap">
                         <a data-fancybox="gallery" href="images/about-us-img.jpg"><img src="images/gallery-footer-img-1.jpg" alt="" width="300" height="300"></a>
                     </div>
-                    <div class="gallery-footer__item">
+                    <div class="gallery-footer__item-wrap">
                         <a data-fancybox="gallery" href="images/about-us-img.jpg"><img src="images/gallery-footer-img-2.jpg" alt="" width="300" height="300"></a>
                     </div>
-                    <div class="gallery-footer__item">
+                    <div class="gallery-footer__item-wrap">
                         <a data-fancybox="gallery" href="images/about-us-img.jpg"><img src="images/gallery-footer-img-3.jpg" alt="" width="300" height="300"></a>
                     </div>
-                    <div class="gallery-footer__item">
+                    <div class="gallery-footer__item-wrap">
                         <a data-fancybox="gallery" href="images/about-us-img.jpg"><img src="images/gallery-footer-img-4.jpg" alt="" width="300" height="300"></a>
                     </div>
-                    <div class="gallery-footer__item">
+                    <div class="gallery-footer__item-wrap">
                         <a data-fancybox="gallery" href="images/about-us-img.jpg"><img src="images/gallery-footer-img-5.jpg" alt="" width="300" height="300"></a>
                     </div>
-                    <div class="gallery-footer__item">
+                    <div class="gallery-footer__item-wrap">
                         <a data-fancybox="gallery" href="images/about-us-img.jpg"><img src="images/gallery-footer-img-6.jpg" alt="" width="300" height="300"></a>
                     </div>
                 </div>
             </div>
             <!-- /.SECTION-9 -->
+
+            <footer class="footer">
+                <div class="footer__logo">
+                    <a href="#" class="footer__text">Bocharova</a>
+                </div>
+                <ul class="footer__box">
+                    <li class="footer__item"><a class="js-scroll-link" href="#about">О нас</a></li>
+                    <li class="footer__item"><a class="js-scroll-link" href="#catalog">Каталог</a></li>
+                    <li class="footer__item"><a class="js-scroll-link" href="#contacts">Контакты</a></li>
+                </ul>
+                <a class="button-contact-us" href="#">Contact us</a>
+                <div class="footer__sources">
+                    <div class="footer__social-network">
+                        <a href="#"><img src="./images/bg-instagram.svg" width="24" height="24"></a>
+                        <a href="#"><img src="./images/bg-facebook.svg" width="24" height="24"></a>
+                        <a href="#"><img src="./images/bg-vk.svg" width="24" height="24"></a>
+                    </div>
+                    <p class="footer__copyright">copyright © 2017 all rights reserved</p>
+                </div>
+            </footer>
+
         </div>
     </div>
     //= partials/hidden-block.html

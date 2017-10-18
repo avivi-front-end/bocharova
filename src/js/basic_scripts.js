@@ -122,6 +122,7 @@ function animationBlock(item){
               var itemSect = $(this);
               var point = 0;
               itemSect.find('.animate-it').addClass('animated');
+              itemSect.find('.animate-it-1').addClass('animated-1');
 
               var timer = setInterval(function(){
                  itemSect.find('.animate-delay').eq(point).addClass('animated');
@@ -226,13 +227,12 @@ function headeButer(menuMobile,toggleMenu){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
-
     //oneHeightItems();
 
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     //goTo();
-    //animationBlock($('.setion-animate'));
+    animationBlock($('.section-animate'));
 });
 
 $(window).resize(function() {
