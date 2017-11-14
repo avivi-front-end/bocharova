@@ -1,4 +1,4 @@
-// $('.testimonials').slick();
+
 $('.site-nav').removeClass('show'); //for hide mobile navigation
 $('.site-header__box').removeClass('show'); //for hide mobile navigation
 
@@ -7,6 +7,15 @@ $(document).ready(function(){
     $(".section-1__head").delay(1500).fadeIn('slow');
     $(".button-contact-us").delay(1500).fadeIn('slow');
     $("#scroll").delay(4000).fadeIn('slow');
+    // random padding for catalog items
+    function RandomPaddingCatalog() {
+        $(".random-padding-top-js").each(function() {
+            var random = Math.round(Math.random() * 50) + 100;
+            $(this).css("padding-top",random);
+            console.log(random + "px")
+        });
+    }
+    //RandomPaddingCatalog();
 });
 
 //slick slider
@@ -177,7 +186,7 @@ $(document).ready(function(){
             }
         ]
     });
-    $('.catalog').slick({
+    $('.catalog-slick').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
@@ -213,6 +222,64 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true
+                }
+            }
+        ]
+    });
+    $('.goods-view__slider_big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.goods-view__slider_min'
+    });
+    $('.goods-view__slider_min').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.goods-view__slider_big',
+        dots: false,
+        centerMode: true,
+        centerPadding: '5px',
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    centerPadding: '0'
+                }
+            }
+        ]
+    });
+    $('.recommended-products__box').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: true,
+        prevArrow: '<div class="slider-left"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="31px"  opacity="0.4"> <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"d="M15.092,30.753 L17.002,28.745 L3.930,15.749 L17.002,2.756 L15.093,0.745 L-0.002,15.749 L15.092,30.753 Z"/> </svg></div>',
+        nextArrow: '<div class="slider-right"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="31px" transform="rotate(180)"  opacity="0.4"> <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"d="M15.092,30.753 L17.002,28.745 L3.930,15.749 L17.002,2.756 L15.093,0.745 L-0.002,15.749 L15.092,30.753 Z"/> </svg></div>',
+        responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+            ,
+            {
+                breakpoint: 710,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
@@ -257,14 +324,13 @@ $('.header__search').click(function() {
 //     });
 // });
 
-
 //fixed and fadein navigation
 $(document).ready(function(){
-    var element = $('.site-header');
+    var element = $('#header-main'); //.site-header
     var section1 = $('.wrap-section-1');
     var section2 = $('.section-2');
-    var height = $(window).height() - 70;
-    // var elementWidth = element.width();
+    var elementHeight = element.height();
+    var height = $(window).height() - elementHeight; //$(window).height() - 70
     // var body = $('body');
     // var bodyHeight = body.outerHeight(true);
     // var scrolledBlock = $('.scrolled-block');
@@ -272,7 +338,6 @@ $(document).ready(function(){
     // var winHeight = $(window).height();
     // var maxScroll = bodyHeight - winHeight;
     // var coeff = maxScroll/(sbWidth-elementWidth);
-
     $(window).scroll(function() {
         var $this = $(this);
 
@@ -299,7 +364,6 @@ var goTo = (function(){
         $('body,html').animate({scrollTop: target}, 1500);
     });
 })();
-
 
 
 // animate catalog

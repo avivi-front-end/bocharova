@@ -9,23 +9,31 @@
         </div>
     </div>
 
-    <div id="call-popup">
+    <div id="call-popup" class="modal-window">
         <form action="ajax.php" name="" class="contact-form">
-            <div class="contact-form-title">
-                <h5>Lorem ipsum dolor.</h5>
+            <div class="modal-window__title">
+                <h3>Связаться С Нами</h3>
+                <p class="modal-window__desc">Напишите нам и наш менеджер свяжется с вами в течении 30 минут для консультации</p>
             </div>
             <div class="contact-form-row cfix">
                 <div class="contact-form-item">
                     <div class="contact-form-item-input form_row">
                         <div class="form_input">
-                            <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                            <input type="text" name="contact_name" required="required" value="" placeholder="Имя Фамилия">
                         </div>
                     </div>
                 </div>
                 <div class="contact-form-item">
                     <div class="contact-form-item-input form_row">
                         <div class="form_input">
-                            <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                            <input type="text" name="contact_tel" value="" required="required" placeholder="Номер Телефона" class="tel-mask">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input form_input__mess">
+                            <input type="text" name="contact_mess" value="" required="required" placeholder="Сообщение">
                         </div>
                     </div>
                 </div>
@@ -33,7 +41,7 @@
             <div class="contact-form-row cfix">
                 <div class="contact-form-item">
                     <button type="submit" class="contact-submit">
-                        <span>Отправить заявку</span>
+                        <span>Отправить</span>
                     </button>
                 </div>
             </div>

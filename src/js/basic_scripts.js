@@ -189,7 +189,6 @@ function bindExample(){
             }
         });
     };
-
 }
 
 /*header buter*/
