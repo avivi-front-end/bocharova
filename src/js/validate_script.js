@@ -122,7 +122,7 @@ function validationCallDocuments(form){
         cache:false,
         success: function(response) {
             thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
+            popNext("#call_success");
         }
     });
 
