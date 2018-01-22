@@ -39,9 +39,21 @@
                     </div>
                     <div class="section-1__bottom-row">
                         <div class="social-network">
-                            <a href="#"><svg width="24px" height="24px"><use xlink:href="#instagram"></use></svg></a>
-                            <a href="#"><svg width="24px" height="24px"><use xlink:href="#facebook"></use></svg></a>
-                            <a href="#"><svg width="24px" height="24px"><use xlink:href="#vk"></use></svg></a>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </a>
                         </div>
                         <div id="scroll" class="scroll__firstscreen">
                             <svg class="arrow-bounce" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="53px">
@@ -88,11 +100,34 @@
                 <div class="site-header__logo">
                     <a href="#" class="site-header__text">Bocharova</a>
                 </div>
-                <ul class="site-header__box">
-                    <li class="site-header__item"><a class="js-scroll-link" href="#about">О нас</a></li>
-                    <li class="site-header__item"><a class="js-scroll-link" href="#catalog">Каталог</a></li>
-                    <li class="site-header__item"><a class="js-scroll-link" href="#contacts">Контакты</a></li>
-                </ul>
+                <div class="site-header__box">
+                    <ul class="site-nav__box">
+                        <li class="site-header__item"><a class="js-scroll-link" href="#about">О&nbsp;нас</a></li>
+                        <li class="site-header__item"><a class="js-scroll-link" href="#catalog">Каталог</a></li>
+                        <li class="site-header__item"><a class="js-scroll-link" href="#contacts">Контакты</a></li>
+                    </ul>
+                    <div class="social-network">
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="lang">
+                        <span class="lang__ru active">Рус</span>
+                        <span class="lang__en">Eng</span>
+                    </div>
+                </div>
                 <form class="search-form header__search" name="search-site" action="#">
                     <input type="text" id="search_query" placeholder="Поиск по сайту">
                     <input type="submit" id="search_go" value="">
@@ -109,9 +144,7 @@
                     <div class="about-us__img">
                         <img src="images/about-us-img.jpg" alt="about us" width="771" height="700">
                     </div>
-
                     <div class="about-us__desc">
-
                         <h2 class="head-level-2">О нас</h2>
                         <div class="about-us__wrap section-animate">
                             <p class="about-us__info"><a class="tag" href="#">#MBocharova</a> - модный бренд одежды, органично объединивший в себе уникальный дизайн и высокое качество изделий.</p>
@@ -439,15 +472,38 @@
                 <a class="button-contact-us" href="#">Contact us</a>
                 <div class="footer__sources">
                     <div class="footer__social-network">
-                        <a href="#"><img src="./images/bg-instagram.svg" width="24" height="24"></a>
-                        <a href="#"><img src="./images/bg-facebook.svg" width="24" height="24"></a>
-                        <a href="#"><img src="./images/bg-vk.svg" width="24" height="24"></a>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="24" height="24">
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </a>
                     </div>
-                    <p class="footer__copyright">copyright © 2017 all rights reserved</p>
+
+                </div>
+                <div class="avivi__href">
+                    <a href="#">
+                        <span>разработано</span>
+                        <svg width="25" height="22">
+                            <use xlink:href="#lologo-img"></use>
+                        </svg>
+                        <svg width="55" height="18">
+                            <use xlink:href="#lologo-text"></use>
+                        </svg>
+                    </a>
                 </div>
             </footer>
             <!-- /.FOOTER -->
-        </div>
+    </div>
     </div>
     //= partials/hidden-block.html
     //= partials/footer.html
