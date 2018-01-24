@@ -399,7 +399,7 @@ input, textarea{
 
     }
 }
-.footer { background-color: #ffffff; position: inherit; display: flex;  justify-content: space-around;  align-items: center;  padding: 50px 0;  font-size: 1rem;  border-top: 5px solid #000000;
+.footer { background-color: #ffffff; position: inherit; display: flex;  justify-content: space-around;  align-items: center;  padding: 50px 0 0;  font-size: 1rem;  border-top: 5px solid #000000; flex-wrap: wrap;
     &__logo { background: url("../images/header-logo.png") no-repeat center;  height: 115px;  width: 17.791%;  margin: 0;  display: flex;  align-items: center;  }
     &__text {  font-weight:300; display: inline-block;  font-size: 1.875em;  color: #000000; text-decoration: none;  text-transform: uppercase;  text-align: center;  letter-spacing: 0.625em; }
     &__box {  display: flex; align-items: center; padding: 0;  margin: 0;  list-style: none; z-index: 1;  }
@@ -493,6 +493,10 @@ input, textarea{
     &__box {  margin: 0 auto;  }
 
 }
+#call-success{overflow: visible; border: 2px solid #363636;  background-repeat: no-repeat;  background-position: left bottom;  background-color: #ffffff;  background-image: url("../images/logo-bocharova-mod.png"); background-size: contain; padding-top: 0;  padding-bottom: 0; margin: 0;
+    .modal-window__desc{ margin-top: 20px; margin-bottom: 40px;font-size: 1.2em;}
+    .modal-window__title h3{ margin-top: 60px;}
+}
 .modal-window { overflow: visible; width: 100%; max-width: 945px;  height: 90vh; min-height: 410px;  display: flex;  flex-direction: column;  justify-content: center;  border: 2px solid #363636;  background-repeat: no-repeat;  background-position: left bottom;  background-color: #ffffff;  background-image: url("../images/logo-bocharova-mod.png"); padding-top: 0;  padding-bottom: 0; margin: 0;
     &__title {
         h3 {  color: #363636;  font-weight:900;  font-size: 70px;  text-align: center;margin: 9vh 0 0; }
@@ -535,7 +539,7 @@ input, textarea{
         a{ display: inline-block; width: auto; padding: 0 40px; height: 55px; line-height: 51px; margin-bottom: 0;}
     }
 }
-.avivi__href{ width: 100%; height: 60px; border-top:1px solid #c2c2c2; display: flex; justify-content: center; align-items: center; font-size: 18px; font-weight: 300; text-transform: uppercase;
+.avivi__href{ width: 100%; height: 60px; border-top:1px solid #c2c2c2; display: flex; justify-content: center; align-items: center; font-size: 18px; font-weight: 300; text-transform: uppercase; margin-top: 50px;
     a{color: #363636; text-decoration: none; display: inline-flex; justify-content: center; align-items: center;}
     span{ margin-right: 20px; margin-top: 4px;}
     svg{ margin-right: 10px;}
@@ -634,11 +638,12 @@ input, textarea{
     .contacts {
         &__wrap{ justify-content: space-around; padding: 0;}
     }
-    .footer { z-index: 1;  padding: 15px 0 50px;  font-size: 0.71rem;
+    .footer { z-index: 1;  padding: 15px 0 0;  font-size: 0.71rem;
         &__logo {  background-size: contain;  }
         .button-contact-us {  transform: scale(0.8,0.8);  }
         &__copyright {  bottom: -45px;  }
     }
+    .avivi__href{ margin-top: 15px;}
     .catalog .catalog__item { margin: 0 3vw;}
     .catalog-page { padding-top: 92px;
         &__text { max-width: 53.125vw;
@@ -665,7 +670,7 @@ input, textarea{
     }
     .recommended-products{margin: 0 0 100px;}
 
-} //----- max-width: 1600px -----
+}
 @media only screen and (max-width: 1365px) {
     .head-level-2 {  font-size: 3.33em;  margin: 0.35em 0;  }
     .button-contact-us {  font-size: 18px;  letter-spacing: 3px;  max-width: 19.5vw;  }
@@ -767,7 +772,7 @@ input, textarea{
         &.first{ width: 64%;}
         &:not(.first){ padding-right: 0;}
     }
-    .footer { padding: 5px 0 50px 0;  font-size: 0.75rem; flex-wrap: wrap;
+    .footer { padding: 5px 0 0 0;  font-size: 0.75rem; flex-wrap: wrap;
         &__logo {  background-size: contain; height: 86px; width: 26.791%; flex-basis: 100%;  }
         .button-contact-us {  max-width: 25vw; transform: scale(0.8,0.8);}
         &__text {  font-size: 1.42em; letter-spacing: 1em; width: 100%; }
@@ -779,6 +784,7 @@ input, textarea{
             a { &:nth-child(2) {  margin: 0 3.125vw;  } }
         }
     }
+    .avivi__href{ margin-top: 5px;}
     .catalog-page { padding-top: 92px;
         &__text {  max-width: 53.125vw;
             .head-level-2 {  margin-top: 45px;  margin-bottom: 30px;
@@ -815,7 +821,7 @@ input, textarea{
 
     }
 
-} //----- max-width: 1365px -----
+}
 @media only screen and (max-width: 1000px){
     .fancybox-close-small{ right: 0; top: 0;}
 }
@@ -878,7 +884,7 @@ input, textarea{
     .site-header { font-size: 0.71rem;  justify-content: space-around;  align-items: center;  height: 60px; opacity: 1; pointer-events: all;
         &__logo {   width: 100%;   background-size: contain; height: 50px; }
         &__text {  display: inline-block;   color: #868686;  text-transform: uppercase;  text-align: center; font-size: 12px;letter-spacing: 0.6875em;margin-top: 0; line-height: 50px;  position: relative; width: auto; padding: 0; margin-left: 4px; }
-        &__box {  display: none;  flex-direction: column;  align-items: center;  background-color: #000000;  width: 100%;  height: auto;  position: absolute;  top: 100%;  z-index: 1;  opacity: 1;animation-duration:  0.3s; animation-timing-function: linear;
+        &__box {  display: none;  flex-direction: column;  align-items: center;  background-color: #000000;  width: 100%;  height: auto;  position: absolute;  top: 100%; left: 0;  z-index: 1;  opacity: 1;animation-duration:  0.3s; animation-timing-function: linear;
             @keyframes mobile-nav { 0% { height: 0; opacity: 0; } 100% { height: auto; opacity: 1; } }
             .site-nav__box{ flex-direction: column; width: 100%;}
         }
@@ -1014,7 +1020,7 @@ input, textarea{
     .gallery .slider-left:hover svg {
         transform: scale(1);
     }
-} //----- max-width: 900px -----
+}
 @media only screen and (max-width: 600px) {
     .modal-window__title h3{ font-size: 26px;}
     .global-wrapper {  overflow: hidden;  }
@@ -1178,7 +1184,7 @@ input, textarea{
     .catalog-gallery { margin: 0 5vw; justify-content: space-around;  background-image: none;
         .catalog__box {  flex-basis: 50%; padding: 0 10px;  }
     }
-    .breadcrumbs-box { padding: 45px 0;  background-color: #fefdfd;  margin: 70px 0;  }
+    .breadcrumbs-box {padding: 45px 0;background-color: #fefdfd;margin: 70px 0;}
     .breadcrumbs { margin-right: 0;
         &__item { margin: 0 10px;
             a {  line-height: 40px;  width: 40px;  }
@@ -1208,6 +1214,7 @@ input, textarea{
     }
     .page404__text{ bottom: auto; top: 50px; left: 20px;}
     .page404__btns{ bottom: 12px;}
+    .modal-window { height: 82vh;}
 }
 @media only screen and (max-width: 480px){
     .contacts__img p { font-size: 3em; }
