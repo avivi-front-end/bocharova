@@ -1214,7 +1214,9 @@ input, textarea{
     }
     .page404__text{ bottom: auto; top: 50px; left: 20px;}
     .page404__btns{ bottom: 12px;}
-    .modal-window { height: 82vh;}
+    .modal-window { height: auto; padding-bottom: 20px;}
+    .modal-window .contact-form-row{ margin-top: 12px;}
+    .modal-window .form_input__mess{ margin-top:0;}
 }
 @media only screen and (max-width: 480px){
     .contacts__img p { font-size: 3em; }
